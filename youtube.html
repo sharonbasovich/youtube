@@ -2,71 +2,10 @@
 <html>
   <head>
     <title>YouTube</title>
-    <style>
-      .thumbnail {
-        width: 100%;
-      }
-
-      .search-bar {
-        font-size: 20px;
-        display: block;
-      }
-
-      .video-author,
-      .video-stats {
-        font-size: 12px;
-        color: rgb(96, 96, 96);
-      }
-
-      .video-author {
-        margin-bottom: 4px;
-      }
-
-      .video-title {
-        margin-top: 0;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 20px;
-        margin-bottom: 12px;
-      }
-
-      .video-preview {
-      }
-
-      .pfp-container {
-      }
-
-      .video-info {
-      }
-
-      .video-grid {
-        display: grid;
-        grid-template-columns: 50px 1fr;
-      }
-
-      .pfp {
-        object-fit: contain;
-        width: 40px;
-        border-radius: 40px;
-      }
-
-      .thumbnail-container {
-        margin-bottom: 12px;
-      }
-
-      p {
-        font-family: Roboto, Arial;
-        margin-top: 0;
-        margin-bottom: 0;
-      }
-
-      .page-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 16px;
-        row-gap: 40px;
-      }
-    </style>
+    
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/video.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -76,7 +15,13 @@
     />
   </head>
   <body>
-    <input class="search-bar" type="text" placeholder="Search" />
+    <div class="header">
+      <div class="left-section">left</div>
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search" />
+      </div>
+      <div class="right-section">right</div>
+    </div>
 
     <div class="page-grid">
       <div class="video-preview">
@@ -176,7 +121,9 @@
             <img class="pfp" src="pfps/channel-6.jpeg" />
           </div>
           <div class="video-info">
-            <p class="video-title">Anything You Can Fit In The Circle I&#39;ll Pay For</p>
+            <p class="video-title">
+              Anything You Can Fit In The Circle I&#39;ll Pay For
+            </p>
             <p class="video-author">MrBeast</p>
             <p class="video-stats">141M views &#183; 1 year ago</p>
           </div>
